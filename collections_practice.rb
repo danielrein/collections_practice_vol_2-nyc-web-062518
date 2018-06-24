@@ -45,9 +45,9 @@ def find_cool(array)
   cool_hashes
 end
 
-def organize_schools(schoolArray)
+def organize_schools(schools)
   organized = {}
-  schoolArray.each do | school, location_hash |
+  schools.each do | school, location_hash |
     location = location_hash[:"location"]
     if !organized.keys.include?(location)
       organized[location] = []
